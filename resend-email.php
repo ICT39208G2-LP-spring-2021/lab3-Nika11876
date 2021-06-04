@@ -34,7 +34,7 @@ try {
   //Content
   $mail->isHTML(true);                                  //Set email format to HTML
   $mail->Subject = 'Email verification';
-  $mail->Body    = 'Confirm your email by following this link: http://mywebsite.domain/activate-user.php?token=' . $_SESSION['TOKEN'];
+  $mail->Body    = 'Confirm your email by following this link: http://localhost/lab3-Nika11876/activate-user.php?token=' . $_SESSION['TOKEN'];
   $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
   if ($_SESSION['TRIES'] > 0) {
